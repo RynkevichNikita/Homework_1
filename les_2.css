@@ -1,0 +1,122 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background-color: black;
+    height: 45px;
+    padding-top: 30px;
+}
+
+.logo_1 {
+    color: white;
+    font-size: 2em;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.logo_2 {
+    color: #EC7979;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navigation {
+    display: inline;
+    float: right;
+}
+
+.navigation a {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 2.5em;
+    
+}
+
+.backG {
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://www.peerspace.com/resources/wp-content/uploads/street-690826_1280.jpg)
+}
+
+.inputIntro {
+    font-weight: 900;
+    margin: 16px 32px;
+}
+
+#free {
+    color: #EC7979;
+}
+
+.sign {
+    float: right;
+    margin: 20% 20%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.inputLine {
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+}
+
+.label {
+    margin: 16px 32px 0px 32px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.8em;
+}
+
+.input {
+    margin: 0px 32px 16px 32px;
+}
+
+.submitButt {
+    background-color: #EC7979;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.centerB {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.centerS {
+    text-align: center;
+    font-size: 18px;
+    color: #86878B;
+}
+
+.last {
+    display: table;
+    margin: auto;
+}
+
+.message {
+    background-color: #EC7979;
+    color: white;
+    border: none;
+    height: 58px;
+    width: 370px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.t1 {
+    border: 2px solid black;
+}

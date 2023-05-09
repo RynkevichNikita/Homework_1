@@ -5,19 +5,25 @@ body {
 }
 
 .top {
+    position: fixed;
     background-color: black;
     height: 45px;
     padding-top: 30px;
+    width: 100%;
 }
 
 .logo_1 {
+    position: relative;
+    bottom: 15px;
     color: white;
     font-size: 2em;
-    margin-left: 30px;
+    margin-left: 50px;
     font-weight: bold;
 }
 
 .logo_2 {
+    position: relative;
+    bottom: 15px;
     color: #EC7979;
     font-size: 2em;
     font-weight: bold;
@@ -26,6 +32,7 @@ body {
 .navigation {
     display: inline;
     float: right;
+    margin-right: 170px;
 }
 
 .navigation a {
@@ -38,26 +45,92 @@ body {
 }
 
 .backG {
-    height: 900px;
+    height: 1300px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(https://www.peerspace.com/resources/wp-content/uploads/street-690826_1280.jpg)
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.peerspace.com/resources/wp-content/uploads/street-690826_1280.jpg)
+}
+
+.mainPage{
+    padding: 15% 15% 0 10%;
 }
 
 .inputIntro {
-    font-weight: 900;
-    margin: 16px 32px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 16px 30px 50px 30px;
+    text-align: center;
 }
 
 #free {
     color: #EC7979;
 }
 
+.hero_block{
+    display: inline-block;
+    width: 100%;
+    max-width: 42%;
+    vertical-align: top;
+}
+
+.logo_main1{
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.logo_main2{
+    color: #EC7979;
+    font-size: 3em;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.hText{
+    margin-top: 70px;
+}
+
+.heroDesc::before{
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #FFF;
+    display: block;
+    margin: 55px 0 42px 0;
+}
+
+.heroText{
+    display: inline;
+    width: 100%;
+    max-width: 50%;
+    color: white;
+    font-size: 48px;
+}
+
+.heroDesc{
+    color: #FFF;
+    width: 40%;
+    margin: 42px 0 42px 0;
+}
+
+.heroButt{
+    border: 1px solid #FFF;
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFF;
+    width: 270px;
+    height: 58px;
+    font-size: 18px;
+}
+
 .sign {
+    display: inline-block;
+    width: 27%;
+    max-width: 50%;
     float: right;
-    margin: 20% 20%;
     background-color: white;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .inputLine {
@@ -66,16 +139,17 @@ body {
     background-color: transparent;
     color: inherit;
     outline: none;
+    width: 100%;
 }
 
 .label {
-    margin: 16px 32px 0px 32px;
+    margin: 16px 50px 0px 50px;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 0.8em;
+    font-size: 14px;
 }
 
 .input {
-    margin: 0px 32px 16px 32px;
+    margin: 0px 50px 16px 50px;
 }
 
 .submitButt {
@@ -93,10 +167,35 @@ body {
     font-weight: bold;
 }
 
+.centerS::before {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
 .centerS {
     text-align: center;
     font-size: 18px;
     color: #86878B;
+}
+
+.botDiv {
+    display: inline-block;
+    width: 100%;
+    max-width: 35%;
+    margin-left: 7%;
+}
+
+.botDiv2 {
+    margin-left: 0;
+}
+
+#botMes {
+    vertical-align: top;
 }
 
 .last {
@@ -110,6 +209,7 @@ body {
     border: none;
     height: 58px;
     width: 370px;
+    font-size: 18px;
 }
 
 .table {
@@ -119,4 +219,42 @@ body {
 
 .t1 {
     border: 2px solid black;
+}
+
+.stylish{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/backStylish.png);
+    height: 442px;
+    margin-top: 20px;
+    color: #FFF;
+    text-align: center;
+}
+
+.stylh2 {
+    font-size: 36px;
+    padding: 57px 0 57px 0;
+    margin: 50px 0 50px 0;
+}
+
+.stylh5::before {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #FFF;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.stylh5 {
+    font-size: 18px;
+    margin: 0 0 73px 0;
+}
+
+.stylButt {
+    border: 1px solid #FFF;
+    background-color: rgba(0, 0, 0, 0);
+    color: #FFF;
+    width: 370px;
+    height: 58px;
+    font-size: 18px;
 }

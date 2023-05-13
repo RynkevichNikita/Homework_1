@@ -10,6 +10,7 @@ body {
     height: 45px;
     padding-top: 30px;
     width: 100%;
+    overflow: hidden;
 }
 
 .logo_1 {
@@ -40,8 +41,33 @@ body {
     font-weight: bold;
     color: white;
     text-decoration: none;
-    padding: 2.5em;
-    
+    padding: 100% 30px 100% 30px;
+}
+
+.navigation a:hover {
+    background-color: #EC7979;
+}
+
+.navigation a:active {
+    background-color: #AB4949;
+}
+
+.submitButt:hover,
+.message:hover {
+    background-color: #AB4949;
+}
+
+.heroButt:hover,
+.stylButt:hover {
+    border-color: #EC7979;
+    color: #EC7979;
+}
+
+.heroButt:active,
+.stylButt:active {
+    border-color: #AB4949;
+    background-color: #EC7979;
+    color: #FFF;
 }
 
 .backG {
@@ -124,7 +150,6 @@ body {
 }
 
 .sign {
-    display: inline-block;
     width: 27%;
     max-width: 50%;
     float: right;
@@ -212,15 +237,6 @@ body {
     font-size: 18px;
 }
 
-.table {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.t1 {
-    border: 2px solid black;
-}
-
 .stylish{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/backStylish.png);
     height: 442px;
@@ -257,4 +273,272 @@ body {
     width: 370px;
     height: 58px;
     font-size: 18px;
+}
+
+
+
+
+
+footer {
+    background-color: #000000;
+    margin-top: 10px;
+    padding-top: 40px;
+    color: #cccccc;
+}
+
+.faceI::before {
+    content: url('data:image/svg+xml, <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M20.3885 47.6584H29.2552V29.9029H37.2441L38.1219 21.0806H29.2552V16.6251C29.2552 16.0372 29.4887 15.4734 29.9044 15.0577C30.3201 14.642 30.884 14.4084 31.4719 14.4084H38.1219V5.54175H31.4719C28.5324 5.54175 25.7133 6.70945 23.6348 8.78798C21.5562 10.8665 20.3885 13.6856 20.3885 16.6251V21.0806H15.9552L15.0774 29.9029H20.3885V47.6584Z" fill="rgb(204, 204, 204)"/> </svg>');
+}
+
+.twI {
+    background-image: url(images/icons/twitterI.svg);
+}
+
+.linkI {
+    background-image: url(images/icons/linkedI.svg);
+}
+
+.pintI {
+    background-image: url(images/icons/pinterestI.svg);
+}
+
+.instaI {
+    background-image: url(images/icons/instaI.svg);
+}
+
+.gitI {
+    background-image: url(images/icons/gitI.svg);
+}
+
+.rssI {
+    background-image: url(images/icons/rssI.svg);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    max-width: 30%;
+    margin: auto;
+}
+
+.grid a {
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.footText {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
+
+.why {
+    text-align: center;
+}
+
+.whyH {
+    padding: 40px 0;
+    margin: 0;
+    font-size: 36px;
+}
+
+.whyH::after {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    display: block;
+    margin: auto;
+    margin-TOP: 60px;
+}
+
+.why p {
+    color: #86878B;
+    font-size: 18px;
+    margin: 0 0 110px;
+}
+
+.whyTable {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 170px;
+    gap: 30px;
+}
+
+.whyTableIcon {
+    margin: auto;
+    min-height: 170px;
+    min-width: 170px;
+    background-repeat: no-repeat;
+
+}
+
+.whyTableIdea{
+background-image: url(images/icons/whyT/idea.svg);
+}
+
+.whyTableKeyB {
+    background-image: url(images/icons/whyT/keyB.svg);
+}
+
+.whyTableZip {
+    background-image: url(images/icons/whyT/zip.svg);
+}
+
+.whyTableH {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.whyTableDesc {
+    font-size: 18px;
+}
+
+
+.price {
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.priceH {
+    font-size: 36px;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+
+.priceH::after {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    display: block;
+    margin: auto;
+    margin-TOP: 60px;
+}
+
+.price p {
+    font-size: 18px;
+    color: #86878B;
+    margin: 0 0 110px;
+}
+
+.priceTable1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 170px;
+    column-gap: 40px;
+    padding-bottom: 50px;
+}
+
+.priceTableH {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #333333;
+    border: 1px solid #F5F5F5;
+    color: #FFF;
+}
+
+.priceTableP {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #333333;
+    border: 1px solid #F5F5F5;
+    color: #FFF;
+}
+
+.priceTableDesc {
+    font-size: 18px;
+    background-color: #333333;
+    border: 1px solid #F5F5F5;
+    color: #FFF;
+}
+
+.priceTableCh {
+    font-size: 18px;
+    background-color: #FFF;
+    border: 1px solid #F5F5F5;
+    color: #86878B;
+}
+
+.cust {
+    text-align: center;
+}
+
+.custH {
+    font-size: 36px;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+
+.custH::after {
+    content: "";
+    width: 170px;
+    height: 1px;
+    background-color: #EC7979;
+    display: block;
+    margin: auto;
+    margin-TOP: 60px;
+}
+
+.cust p {
+    font-size: 18px;
+    color: #86878B;
+    margin: 0 0 110px;
+}
+
+.custTable1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 170px;
+    column-gap: 40px;
+}
+
+.custTableDesc {
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #86878B;
+    padding: 30px;
+}
+
+.custTriangle {
+    background-image: url(images/icons/triangle.svg);
+    min-height: 30px;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+
+.custTable2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr 3fr);
+    margin: 0 170px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.custpic {
+    background-repeat: no-repeat;
+    min-height: 80px;
+}
+
+.custDavis {
+    background-image: url(images/pics/Davis.png);
+}
+
+.custJaydon {
+    background-image: url(images/pics/Jaydon.png);
+}
+
+.custCooper {
+    background-image: url(images/pics/Cooper.png);
+}
+
+.custname {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
 }

@@ -2,6 +2,12 @@
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 .navig {
@@ -12,7 +18,12 @@
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    background-color: #252B49; 
+    background-color: #252B49;
+    z-index: 1;
+}
+
+.menuBut {
+    display: none;
 }
 
 .logo {
@@ -253,6 +264,8 @@
 }
 
 .pCard {
+    display: flex;
+    flex-direction: column;
     width: 18%;
 }
 
@@ -398,4 +411,196 @@ footer p {
 footer a {
     color: #FFF;
     text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        margin-left: 0;
+    }
+    
+    .navList {
+        width: 50%;
+        margin-right: 0;
+    }
+    
+    .start {
+        padding: 0;
+    }
+    
+    .adv {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .table {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .tableImg {
+        height: 230px;
+    }
+    
+    .people {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+        justify-content: start;
+        gap: 42px;
+    }
+
+    .pCard {
+        width: 20%;
+    }
+
+    .pPhoto {
+        max-width: 100%;
+        width: 100%;
+        /* overflow: hidden; */
+    }
+    
+    .ready {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .prefooter {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .navig {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navList {
+        display: none;
+    }
+
+    .menuBut {
+        display: block;
+        background-image: url(image/icons/menu.svg);
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    .start h1 {
+        font-size: 36px;
+    }
+
+    .start p {
+        font-size: 14px;
+    }
+
+    .start button {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .adv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .advCaps {
+        width: 90%;
+    }
+
+    .capsH {
+        font-size: 18px;
+    }
+
+    .capsDesc {
+        font-size: 14px;
+    }
+
+    .table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tableImg {
+        height: 144px;
+    }
+
+    .backH {
+        font-size: 18px;
+    }
+
+    .backDesc {
+        font-size: 14px;
+    }
+
+    .people {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pCard {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .pName {
+        font-size: 18px;
+    }
+
+    .prof {
+        font-size: 14px;
+    }
+
+    .pDesc {
+        font-size: 14px;
+    }
+
+    .ready h3 {
+        font-size: 18px;
+    }
+
+    .ready h5 {
+        font-size: 13px;
+    }
+
+    .ready button {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .prefooter {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 42px;
+        padding-top: 42px;
+        padding-bottom: 30px;
+    }
+
+    .preCol {
+        width: 90%;
+    }
+
+    .preCol a {
+        font-size: 16px;
+    }
+
+    .preColInf {
+        font-size: 14px;
+    }
+
+    .preColLink a {
+        margin-bottom: 0;
+    }
+
+    footer p {
+        width: 90%;
+        font-size: 14px;
+    }
 }

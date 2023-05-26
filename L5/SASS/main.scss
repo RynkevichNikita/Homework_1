@@ -55,7 +55,6 @@ main {
     color: #FFF;
     font-size: 13px;
     height: calc(100% - 3px);
-    width: 100%;
     align-items: center;
     justify-content: center;
     transition: font-size 0.5s;
@@ -73,12 +72,12 @@ main {
 
 .bImg {
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     align-items: stretch;
     height: 900px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url(image/main.png);
+    background-image: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url(../image/main.png);
 }
 
 .start {
@@ -125,27 +124,27 @@ main {
 }
 
 .capsImg1 {
-    background-image: url(image/icons/1.svg);
+    background-image: url(../image/icons/1.svg);
 }
 
 .capsImg2 {
-    background-image: url(image/icons/2.svg);
+    background-image: url(../image/icons/2.svg);
 }
 
 .capsImg3 {
-    background-image: url(image/icons/3.svg);
+    background-image: url(../image/icons/3.svg);
 }
 
 .capsImg4 {
-    background-image: url(image/icons/4.svg);
+    background-image: url(../image/icons/4.svg);
 }
 
 .capsImg5 {
-    background-image: url(image/icons/5.svg);
+    background-image: url(../image/icons/5.svg);
 }
 
 .capsImg6 {
-    background-image: url(image/icons/6.svg);
+    background-image: url(../image/icons/6.svg);
 }
 
 .capsImg {
@@ -195,36 +194,36 @@ main {
 }
 
 .tableImg1 {
-    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(image/table/work_1.png);
+    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(../image/table/work_1.png);
     transition: background-image 1s;
 }
 
 .tableImg2 {
-    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(image/table/work_2.png);
+    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(../image/table/work_2.png);
 }
 
 .tableImg3 {
-    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(image/table/work_3.png);
+    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(../image/table/work_3.png);
 }
 
 .tableImg4 {
-    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(image/table/work_4.png);
+    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(../image/table/work_4.png);
 }
 
 .tableImg5 {
-    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(image/table/work_5.png);
+    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(../image/table/work_5.png);
 }
 
 .tableImg6 {
-    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(image/table/work_6.png);
+    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(../image/table/work_6.png);
 }
 
 .tableImg7 {
-    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(image/table/work_7.png);
+    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(../image/table/work_7.png);
 }
 
 .tableImg8 {
-    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(image/table/work_8.png);
+    background-image: linear-gradient(rgba(255, 67, 67, 0.0), rgba(255, 67, 67, 0.0)), url(../image/table/work_8.png);
 }
 
 .tableImgBack {
@@ -302,15 +301,15 @@ main {
 }
 
 .fb {
-    background-image: url(image/people/icons/fb.svg);
+    background-image: url(../image/people/icons/fb.svg);
 }
 
 .twit {
-    background-image: url(image/people/icons/twit.svg);
+    background-image: url(../image/people/icons/twit.svg);
 }
 
 .linked {
-    background-image: url(image/people/icons/link.svg);
+    background-image: url(../image/people/icons/link.svg);
 }
 
 .ready {
@@ -486,7 +485,7 @@ footer a {
 
     .menuBut {
         display: block;
-        background-image: url(image/icons/menu.svg);
+        background-image: url(../image/icons/menu.svg);
         width: 30px;
         height: 30px;
         margin-right: 8px;
@@ -603,4 +602,46 @@ footer a {
         width: 90%;
         font-size: 14px;
     }
+}
+
+
+.crslDesc {
+    flex-direction: column;
+    background-color: #5C3249;
+    color: #FFF;
+}
+
+.colH {
+    text-transform: capitalize;
+    font-size: 36px;
+}
+
+.colh {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.crslImg {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators button {
+    height: 20px!important;
+    width: 20px!important;
+    border-radius: 50%;
+    border: 1px solid #5C3249!important;
+}
+
+.active {
+    background-color: #5C3249!important;
+}
+
+#carouselExampleSlidesOnly {
+    display: flex;
+    flex-direction: column-reverse;
 }

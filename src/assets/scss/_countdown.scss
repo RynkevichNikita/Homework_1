@@ -1,0 +1,23 @@
+.countdown {
+    background-color: $primary;
+    @include LRpad;
+
+    .cdCol {
+        border-left: 1px solid $white;        
+        border-right: 1px solid $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .cdH {
+            @include fontPrimary(64px, 700, $white);
+        }
+
+        .cdDesc {
+            @include fontPrimary(24px, 700, $white);
+        }
+    }
+}

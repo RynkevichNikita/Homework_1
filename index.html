@@ -1,110 +1,650 @@
 <!DOCTYPE html>
-<html>
-    <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            table, td {
-                border-collapse: collapse;
-                color: blue;
-            } 
-        </style>
-        <title>Homework_1</title>
-    </head>
-    <body>
-        <header>
-            <a href="#">Транспорт</a>
-            <a href="#">Запчасти и шины</a>
-            <a href="#">Журнал</a>
-            <a href="#">Знания</a>
-            <a href="#">Финансы</a>
-            <button style="background-color:rgb(43, 136, 7); color:white">Проверка VIN-кода</button>
-            <button style="background-color:rgb(45, 154, 255); color:white">Подать объявление</button>
-            <hr>
-        </header>
-        <main>
-            <a href="https://av.by/" style="background-color:green; color:white">Link to source</a>
-            <h1>55512 объявлений о продаже авто в Беларуси</h1>
-            <table border="1">
-                <tr>
-                    <td>Alfa Romeo</td>
-                    <td>Dodge</td>
-                    <td>Kia</td>
-                    <td>Nissan</td>
-                    <td>Skoda</td>
-                </tr>
-                <tr>
-                    <td>Audi</td>
-                    <td>Fiat</td>
-                    <td>Lada</td>
-                    <td>Opel</td>
-                    <td>Subaru</td>
-                </tr>
-                <tr>
-                    <td>BMW</td>
-                    <td>Ford</td>
-                    <td>Lexus</td>
-                    <td>Peugeot</td>
-                    <td>Suzuki</td>
-                </tr>
-                <tr>
-                    <td>Chevrolet</td>
-                    <td>Geely</td>
-                    <td>Mazda</td>
-                    <td>Renault</td>
-                    <td>Toyota</td>
-                </tr>
-            </table>
-            <button>Все марки</button>
-            <div>Поиск по параметрам</div>
-            <form>
-                <select>
-                    <option>Марка</option>
-                    <option>Лада</option>
-                    <option>Не Лада</option>
-                </select>
-                <select>
-                    <option>Модель</option>
-                    <option>Ваз</option>
-                    <option>Не Ваз</option>
-                </select>
-                <div>Год</div>
-                <input type="number">
-            </form>
-            <div>
-                Регистрация пользователя
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="dist/css/main.min.css">
+  <title>Lesson 8</title>
+</head>
+
+<body>
+  <section class="welcome">
+    <div class="navig">
+      <span class="logo">
+        MoGo
+      </span>
+      <nav class="navbar navbar-expand-lg menu">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <button class="nav-link px-4" href="#">About</button>
+              <button class="nav-link px-4" href="#">service</button>
+              <button class="nav-link px-4" href="#">work</button>
+              <button class="nav-link px-4" href="#">blog</button>
+              <button class="nav-link px-4" href="#">Contact</button>
+              <button class="nav-link px-4 cartIcon" href="#"></button>
+              <button class="nav-link px-4 lupaIcon" href="#"></button>
             </div>
-            <form>
-                <input type="text" placeholder="Имя">
-                <input type="email" placeholder="email">
-                <input type="password" placeholder="Пароль">
-                <input type="password" placeholder="Повторите пароль">
-                <div>
-                    Немного о себе
-                </div>
-                <textarea></textarea>
-                <div>
-                    Я не робот
-                </div>
-                <input type="checkbox">
-                <div>
-                    100%
-                </div>
-                <input type="radio">
-                <div>
-                    <input type="submit" value="Отправить">
-                </div>
-            </form>
-            <hr>
-        </main>
-        <footer>
-            <span>© 2001, ООО, УНП 123456789, Минск, ул. Кутузова</span>
-            <div>
-                <a href="#">Пользовательское соглашение</a>
-                <a href="#">Правила обработки персональных данных</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="welcomeH">
+            <h2>Creative Template</h2>
+            <h1>Welcome to MoGo</h1>
+            <button>learn more</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="welcomeH">
+            <h2>Creative Template</h2>
+            <h1>Welcome to MoGo</h1>
+            <button>learn more</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="welcomeH">
+            <h2>Creative Template</h2>
+            <h1>Welcome to MoGo</h1>
+            <button>learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="story">
+    <p class="what">What we do</p>
+    <h3>story about us</h3>
+    <p class="storyDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget
+      sit ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum
+      risus feugiat.</p>
+    <div class="container p-0 card">
+      <div class="row d-flex justify-content-between cardRow">
+        <div class="col-md-3 col-12 p-0 cardP">
+          <div class="cardPreCol">
+            <div class="cardCol">
+              <button class="cardIcon"></button>
+              <button class="cardDesc">Super team</button>
             </div>
-        </footer>
-    </body>
-    </html>
+          </div>
+        </div>
+        <div class="col-md-3 col-12 p-0 cardP">
+          <div class="cardPreCol">
+            <div class="cardCol">
+              <button class="cardIcon"></button>
+              <button class="cardDesc">Super team</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-12 p-0 cardP">
+          <div class="cardPreCol">
+            <div class="cardCol">
+              <button class="cardIcon"></button>
+              <button class="cardDesc">Super team</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="countdown">
+    <div class="container">
+      <div class="row row-cols-md-5 row-cols-2">
+        <div class="col cdCol">
+          <span class="cdH">42</span>
+          <span class="cdDesc">Lorem ipsum</span>
+        </div>
+        <div class="col cdCol">
+          <span class="cdH">123</span>
+          <span class="cdDesc">Lorem ipsum</span>
+        </div>
+        <div class="col cdCol">
+          <span class="cdH">15</span>
+          <span class="cdDesc">Lorem ipsum</span>
+        </div>
+        <div class="col cdCol">
+          <span class="cdH">99</span>
+          <span class="cdDesc">Lorem ipsum</span>
+        </div>
+        <div class="col cdCol">
+          <span class="cdH">24</span>
+          <span class="cdDesc">Lorem ipsum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <p class="servP">We work with</p>
+    <h3 class="servH">amazing services</h3>
+    <div class="container-fluid servCont">
+      <div class="row row-cols-2 row-cols-md-6 gy-5">
+        <div class="col-3 col-md-1 shroom"></div>
+        <div class="col-9 col-md-3">
+          <h4 class="servColH">photography</h4>
+          <p class="servColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-3 col-md-1 squares"></div>
+        <div class="col-9 col-md-3">
+          <h4 class="servColH">web design</h4>
+          <p class="servColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-3 col-md-1 sword"></div>
+        <div class="col-9 col-md-3">
+          <h4 class="servColH">creativity</h4>
+          <p class="servColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-3 col-md-1 map"></div>
+        <div class="col-9 col-md-3">
+          <h4 class="servColH">seo</h4>
+          <p class="servColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-3 col-md-1 landscape"></div>
+        <div class="col-9 col-md-3">
+          <h4 class="servColH">css/html</h4>
+          <p class="servColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-3 col-md-1 target"></div>
+        <div class="col-9 col-md-3">
+          <h4 class="servColH">digital</h4>
+          <p class="servColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="design">
+    <p class="designP">For all devices</p>
+    <h3 class="designH">unique design</h3>
+    <div class="designImg">
+      <img src="/dist/img/ipad@2x.png" class="img-fluid designTab" alt="">
+    </div>
+    <img src="/dist/img/iphone@2x.png" class="img-fluid designPhone" alt="">
+    <img src="/dist/img/iphone.png" class="img-fluid designPhoneP" alt="">
+  </section>
+  <section class="wwd">
+    <span class="wwdTitle">Service</span>
+    <h3 class="wwdH">what we do</h3>
+    <p class="wwdP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
+      ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+      feugiat.</p>
+    <div class="container-fluid wwdCont">
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col-12 col-md-6">
+          <img src="/dist/img/wwd.png" class="img-fluid" alt="">
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <span class="wwdPhoto"></span>
+                <span class="wwdAccH">photography</span>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit
+                enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla
+                fermentum sed nunc aenean.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span class="wwdCreativity"></span>
+                <span class="wwdAccH">creativity</span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit
+                enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla
+                fermentum sed nunc aenean. </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="wwdWeb"></span>
+                <span class="wwdAccH">creativity</span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus
+                rhoncus ornare. Amet, et elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit
+                enim fringilla. Proin viverra nibh in vel ut pulvinar nec senectus. Justo, id ac facilisis fringilla
+                fermentum sed nunc aenean. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviewFirst">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rfCar">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-md-block col-md-4 rfPic"></div>
+              <div class="col-12 col-md-8">
+                <p class="rfP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                  ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                  massa sit.</p>
+                <h4 class="rfName">Jon Doe</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-md-block col-md-4 rfPic"></div>
+              <div class="col-12 col-md-8">
+                <p class="rfP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                  ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                  massa sit.</p>
+                <h4 class="rfName">Jon Doe</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-md-block col-md-4 rfPic"></div>
+              <div class="col-12 col-md-8">
+                <p class="rfP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                  ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                  massa sit.</p>
+                <h4 class="rfName">Jon Doe</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="who">
+    <span class="whoTitle">Who we are</span>
+    <h3 class="whoH">meet our team</h3>
+    <p class="whoP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
+      ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+      feugiat.</p>
+    <div class="container-fluid whoCont">
+      <div class="row row-cols-1 row-cols-md-3 d-flex flex-md-nowrap">
+        <div class="col-12 col-md-4 whoKadin p-0">
+          <div class="whoBack">
+            <button class="whoface"></button>
+            <button class="whotwitter"></button>
+            <button class="whopint"></button>
+            <button class="whoinsta"></button>
+          </div>
+          <h4 class="whoName">Kadin Dias</h4>
+          <span class="whoProf">founder, ceo</span>
+        </div>
+        <div class="col-12 col-md-4 whoZain p-0 mx-md-3">
+          <div class="whoBack">
+            <button class="whoface"></button>
+            <button class="whotwitter"></button>
+            <button class="whopint"></button>
+            <button class="whoinsta"></button>
+          </div>
+          <h4 class="whoName">Zain Calzoni</h4>
+          <span class="whoProf">designer</span>
+        </div>
+        <div class="col-12 col-md-4 whoCharlie p-0">
+          <div class="whoBack">
+            <button class="whoface"></button>
+            <button class="whotwitter"></button>
+            <button class="whopint"></button>
+            <button class="whoinsta"></button>
+          </div>
+          <h4 class="whoName">Charlie George</h4>
+          <span class="whoProf">photographer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="figures">
+    <div class="container-fluid m-0">
+      <div class="row">
+        <div class="col-6 col-md-2 figure1"></div>
+        <div class="col-6 col-md-2 figure2"></div>
+        <div class="col-12 col-md-2 figure3"></div>
+        <div class="col-6 col-md-2 figure4"></div>
+        <div class="col-6 col-md-2 figure5"></div>
+        <div class="col-12 col-md-2 figure6"></div>
+      </div>
+    </div>
+  </section>
+  <section class="work">
+    <span class="workTitle">What we do</span>
+    <h3 class="workH">some of our work</h3>
+    <p class="workP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit
+      ridiculus facilisi amet. Dis sapien ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus
+      feugiat.</p>
+    <div class="workGrid">
+      <div class="grid1">
+        <div class="gridBack">
+          <span class="gridIcon"></span>
+          <span class="gridH">creatively design</span>
+          <span class="gridDesc">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="gridBack">
+          <span class="gridIcon"></span>
+          <span class="gridH">creatively design</span>
+          <span class="gridDesc">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="grid3">
+        <div class="gridBack">
+          <span class="gridIcon"></span>
+          <span class="gridH">creatively design</span>
+          <span class="gridDesc">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="grid4">
+        <div class="gridBack">
+          <span class="gridIcon"></span>
+          <span class="gridH">creatively design</span>
+          <span class="gridDesc">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="grid5">
+        <div class="gridBack">
+          <span class="gridIcon"></span>
+          <span class="gridH">creatively design</span>
+          <span class="gridDesc">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="grid6">
+        <div class="gridBack">
+          <span class="gridIcon"></span>
+          <span class="gridH">creatively design</span>
+          <span class="gridDesc">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="grid7">
+        <div class="gridBack">
+          <span class="gridIcon"></span>
+          <span class="gridH">creatively design</span>
+          <span class="gridDesc">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+      <div class="grid8">
+        <div class="gridBack">
+          <span class="gridIcon"></span>
+          <span class="gridH">creatively design</span>
+          <span class="gridDesc">Lorem ipsum dolor sit</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="reviewFirst reviewSecond">
+    <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rfCar">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-md-block col-md-4 rfPic rsPic"></div>
+              <div class="col-12 col-md-8">
+                <p class="rfP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                  ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                  massa sit.</p>
+                <h4 class="rfName">James Philips</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-md-block col-md-4 rfPic"></div>
+              <div class="col-12 col-md-8">
+                <p class="rfP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                  ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                  massa sit.</p>
+                <h4 class="rfName">James Philips</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-md-block col-md-4 rfPic"></div>
+              <div class="col-12 col-md-8">
+                <p class="rfP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                  ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                  massa sit.</p>
+                <h4 class="rfName">James Philips</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <section class="client">
+    <span class="clientTitle">Happy Clients</span>
+    <h3 class="clientH">what people say</h3>
+    <div class="container-fluid m-0 clientContainer">
+      <div class="row row-cols-1 row-cols-md-4 gy-5">
+        <div class="col-12 col-md-2 clientPhoto1 clientPhoto"></div>
+        <div class="col-12 col-md-4">
+          <h4 class="clientName">Phillip Culhane</h4>
+          <span class="clientProf">photographer</span>
+          <p class="clientDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+            vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+        </div>
+        <div class="col-12 col-md-2 clientPhoto2 clientPhoto"></div>
+        <div class="col-12 col-md-4">
+          <h4 class="clientName">Paityn Press</h4>
+          <span class="clientProf">photographer</span>
+          <p class="clientDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+            vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+        </div>
+        <div class="col-12 col-md-2 clientPhoto3 clientPhoto"></div>
+        <div class="col-12 col-md-4">
+          <h4 class="clientName">Paityn Press</h4>
+          <span class="clientProf">photographer</span>
+          <p class="clientDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+            vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+        </div>
+        <div class="col-12 col-md-2 clientPhoto4 clientPhoto"></div>
+        <div class="col-12 col-md-4">
+          <h4 class="clientName">Zaire Schleifer</h4>
+          <span class="clientProf">photographer</span>
+          <p class="clientDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+            vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <span class="blogTitle">Our Stories</span>
+    <h3 class="blogH">Latest blog</h3>
+    <div class="container-fluid m-0 blogContainer">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col-12 col-md-4">
+          <div class="blogBack">
+            <div class="blogDate">
+              <span class="blogDateDay">15</span>
+              <span class="blogDateMonth">jan</span>
+            </div>
+          </div>
+          <h4 class="blogColH">Lorem ipsum dolor sit amet</h4>
+          <p class="blogColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+            vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          <div class="blogInfo">
+            <span class="blogIcon1"></span>
+            <span class="blogNumber1">542</span>
+            <span class="blogIcon2"></span>
+            <span class="blogNumber2">17</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="blogBack">
+            <div class="blogDate">
+              <span class="blogDateDay">15</span>
+              <span class="blogDateMonth">jan</span>
+            </div>
+          </div>
+          <h4 class="blogColH">Lorem ipsum dolor sit amet</h4>
+          <p class="blogColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+            vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          <div class="blogInfo">
+            <span class="blogIcon1"></span>
+            <span class="blogNumber1">542</span>
+            <span class="blogIcon2"></span>
+            <span class="blogNumber2">17</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="blogBack">
+            <div class="blogDate">
+              <span class="blogDateDay">15</span>
+              <span class="blogDateMonth">jan</span>
+            </div>
+          </div>
+          <h4 class="blogColH">Lorem ipsum dolor sit amet</h4>
+          <p class="blogColP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius
+            vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          <div class="blogInfo">
+            <span class="blogIcon1"></span>
+            <span class="blogNumber1">542</span>
+            <span class="blogIcon2"></span>
+            <span class="blogNumber2">17</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="latest">
+    <div class="latestTitle"></div>
+    <h3 class="latestH">Latest blog</h3>
+  </section>
+  <footer>
+    <div class="container-fluid m-0 fCon">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col-12 col-md-4">
+          <h3 class="fLogo">MoGo</h3>
+          <p class="fDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae
+            leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+          <div class="fFol">
+            <span class="fFolNum">15</span>
+            <span class="fFolK">k</span>
+            <span class="fFolDesc">followers</span>
+          </div>
+          <div class="fUs">
+            <span class="fUsFollow">Follow Us</span>
+            <div class="fUsIcons">
+              <button class="fUsIconsF1"></button>
+              <button class="fUsIconsF2"></button>
+              <button class="fUsIconsF3"></button>
+              <button class="fUsIconsF4"></button>
+              <button class="fUsIconsF5"></button>
+              <button class="fUsIconsF6"></button>
+              <button class="fUsIconsF7"></button>
+              <button class="fUsIconsF8"></button>
+            </div>
+          </div>
+          <form class="footerIn" action="">
+            <input class="footerInput" type="email" value="Your Email">
+            <button class="footerBut" type="submit">subscribe</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4 class="fLogo2">blogs</h4>
+          <div class="container fCont">
+            <div class="row row-cols-2 gy-3 fRow">
+              <div class="col-5 fColBack1"></div>
+              <div class="col-7 fColText">
+                <h4 class="fColHead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <p class="fColDate">jan.9.22.15</p>
+              </div>
+              <div class="col-5 fColBack2"></div>
+              <div class="col-7 fColText">
+                <h4 class="fColHead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <p class="fColDate">jan.9.22.15</p>
+              </div>
+              <div class="col-5 fColBack3"></div>
+              <div class="col-7 fColText">
+                <h4 class="fColHead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <p class="fColDate">jan.9.22.15</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4 class="fLogo2">instagram</h4>
+          <div class="fGrid">
+            <div class="dGridEl"></div>
+            <div class="dGridEl"></div>
+            <div class="dGridEl"></div>
+            <div class="dGridEl"></div>
+            <div class="dGridEl"></div>
+            <div class="dGridEl"></div>
+            <div class="dGridEl"></div>
+            <div class="dGridEl"></div>
+            <div class="dGridEl"></div>
+          </div>
+          <a href="" class="fAll">see all photos</a>
+        </div>
+      </div>
+    </div>
+    <p class="fLast">Copyright © 2021 mogo. All Rights Reserved</p>
+  </footer>
+</body>
+
 </html>

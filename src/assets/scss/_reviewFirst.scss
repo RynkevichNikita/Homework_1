@@ -1,0 +1,38 @@
+.reviewFirst {
+    @include LRpad;
+    background-color: #F8F8F8;
+
+    .rfCar {
+        padding: 42px 0 42px 150px;
+        height: 250px;
+    }
+
+    .rfPic {
+        background-image: url(/dist/img/reviewFirst.svg);
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        padding: 80px;
+        background-position: center;
+        border: 2px solid $primary;
+    }
+
+    .rfP {
+        @include fontPrimary(24px, 500, $grey);
+
+        &::after {
+            content: "";
+            width: 70px;
+            height: 4px;
+            background-color: $red;
+            margin-top: 40px;
+            display: block;
+            max-width: 20%;
+        }
+    }
+
+    .rfName {
+        @include fontItalic(30px);
+        transform: translate(100px, -35px);
+    }
+}

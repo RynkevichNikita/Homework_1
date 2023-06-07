@@ -1,0 +1,97 @@
+.blog {
+    @include pad;
+    text-align: center;
+
+    .blogTitle {
+        @include fontItalic(30px);
+    }
+
+    .blogH {
+        @include fontPrimary(36px, 900);
+        text-transform: uppercase;
+        padding-top: 42px;
+
+        &::after {
+            content: "";
+            width: 170px;
+            height: 4px;
+            background-color: $red;
+            display: block;
+            margin: 40px auto;
+        }
+    }
+
+    .blogContainer {
+        text-align: left;
+
+        .blogBack {
+            background-image: url(/dist/img/blogBack.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+            display: flex;
+            align-items: flex-end;
+        }
+    
+        .blogDate {
+            background-color: $primary;
+            max-width: 90px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px 30px;
+            transform: translate(-15px, -15px);
+    
+            .blogDateDay {
+                @include fontPrimary(36px, 700, $white);
+            }
+    
+            .blogDateMonth {
+                @include fontPrimary(18px, 500, $white);
+                text-transform: uppercase;
+            }
+        }
+    
+        .blogColH {
+            @include fontPrimary(24px, 700);
+            text-transform: uppercase;
+            padding-top: 30px;
+        }
+    
+        .blogColP {
+            @include fontPrimary(18px, 400);
+        }
+
+        .blogInfo {
+            display: flex;
+            align-items: center;
+
+            .blogIcon1 {
+                display: inline-block;
+                background-image: url(/dist/img/blogIcon1.svg);
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+                margin-right: 15px;
+            }
+
+            .blogIcon2 {
+                display: inline-block;
+                background-image: url(/dist/img/blogIcon2.svg);
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+                margin-right: 15px;
+            }
+
+            .blogNumber1 {
+                @include fontPrimary(13px, 400);
+                margin-right: 30px;
+            }
+
+            .blogNumber2 {
+                @include fontPrimary(13px, 400);
+            }
+        }
+    }
+}

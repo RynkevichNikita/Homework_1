@@ -1,0 +1,30 @@
+@mixin LRmarg {
+    margin-left: 170px;
+    margin-right: 170px;
+}
+
+@mixin LRpad {
+    padding-left: 170px;
+    padding-right: 170px;
+}
+
+@mixin pad($top: 100px, $bot: 100px) {
+    padding-left: 170px;
+    padding-right: 170px;
+    @if $top != '100px' {
+        padding-top: $top;
+    }
+    @if $bot != '100px' {
+        padding-bottom: $bot;
+    }
+}
+
+@mixin LRpad0 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@mixin LRmarg0 {
+    margin-left: 0;
+    margin-right: 0;
+}

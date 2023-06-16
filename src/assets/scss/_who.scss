@@ -1,0 +1,131 @@
+.who {
+    @include pad(100px, 200px);
+    text-align: center;
+
+    .whoTitle {
+        @include fontItalic(30px);
+    }
+
+    .whoH {
+        @include fontPrimary(36px, 900);
+        text-transform: uppercase;
+        padding-top: 42px;
+
+        &::after {
+            content: "";
+            width: 170px;
+            height: 4px;
+            background-color: $red;
+            display: block;
+            margin: 40px auto;
+        }
+    }
+
+    .whoP {
+        @include fontPrimary(18px, 400);
+    }
+
+    .whoKadin {
+        background-image: url(/dist/img/kadin.png);
+        background-repeat: no-repeat;
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .whoZain {
+        background-image: url(/dist/img/zain.png);
+        background-repeat: no-repeat;
+        height: 500px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .whoCharlie {
+        background-image: url(/dist/img/charlie.png);
+        background-repeat: no-repeat;
+        height: 500px;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .whoBack {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 100%;
+        background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+
+        &:hover {
+            opacity: 1;
+            transform: translate(-10px, -10px);
+        }
+
+        button {
+            border: 0px;
+            margin-left: 1px;
+        }
+    }
+
+    .whoface {
+        background-image: url(/dist/img/face.svg);
+        height: 42px;
+        width: 42px;
+
+        &:hover {
+            background-image: url(/dist/img/facered.svg);
+            height: 42px;
+            width: 42px;
+        }
+    }
+
+    .whotwitter {
+        background-image: url(/dist/img/twitter.svg);
+        height: 42px;
+        width: 42px;
+
+        &:hover {
+            background-image: url(/dist/img/twitterRed.svg);
+            height: 42px;
+            width: 42px;
+        }
+    }
+
+    .whopint {
+        background-image: url(/dist/img/pint.svg);
+        height: 42px;
+        width: 42px;
+
+        &:hover {
+            background-image: url(/dist/img/pintRed.svg);
+            height: 42px;
+            width: 42px;
+        }
+    }
+
+    .whoinsta {
+        background-image: url(/dist/img/insta.svg);
+        height: 42px;
+        width: 42px;
+
+        &:hover {
+            background-image: url(/dist/img/instaRed.svg);
+            height: 42px;
+            width: 42px;
+        }
+    }
+
+    .whoName {
+        @include fontPrimary(24px, 700);
+        text-transform: uppercase;
+        padding: 30px 0 20px;
+    }
+
+    .whoProf {
+        @include fontPrimary(18px, 400);
+        text-transform: uppercase;
+    }
+}

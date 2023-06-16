@@ -1,0 +1,35 @@
+.design {
+    @include pad(60px, 60px);
+    text-align: center;
+    background-image: linear-gradient(rgba($white, 0.8), rgba($white, 0.8)), url(/dist/img/design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 800px;
+
+    .designP {
+        @include fontItalic(30px);
+    }
+
+    .designH {
+        @include fontPrimary(36px, 900);
+        text-transform: uppercase;
+        padding-top: 40px;
+
+        &::after {
+            content: "";
+            width: 170px;
+            height: 4px;
+            background-color: $red;
+            display: block;
+            margin: 40px auto 60px;
+        }
+    }
+
+    .designPhoneP {
+        display: none;
+    }
+
+    .designPhone {
+        transform: translate(240px, -240px);
+    }
+}

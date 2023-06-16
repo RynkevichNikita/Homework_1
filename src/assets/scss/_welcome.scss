@@ -1,0 +1,90 @@
+.welcome {
+    @include LRpad;
+    background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(/dist/img/Eagle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .logo {
+        @include fontPrimary (26px, 700, $white);
+    }
+
+    .navig {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+
+        .cartIcon {
+            background-image: url(/dist/img/cart.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .lupaIcon {
+            background-image: url(/dist/img/lupa.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    
+        .nav-link {
+            @include fontPrimary (14px, 600, $white);
+            text-transform: uppercase;
+        
+            &:active {
+                color: $orange;
+                border-bottom: 1px solid $orange;
+            }
+        
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .welcomeH {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+            @include fontItalic (64px, $white);
+            margin-top: 100px;
+        }
+
+        h1 {
+            @include fontWhy (144px);
+            text-transform: uppercase;
+
+            &::after {
+                content: "";
+                width: 170px;
+                height: 4px;
+                background-color: $white;
+                margin: 40px auto 70px;
+                display: block;
+            }
+        }
+
+        button {
+            background-color: rgba(0, 0, 0, 0);
+            border: 4px solid $white;
+            @include fontPrimary (24px, 700, $white);
+            text-transform: uppercase;
+            width: 30%;
+            margin-bottom: 100px;
+            padding: 30px 50px;
+
+            &:hover {
+                background-color: $white;
+                color: $orange;
+            }
+
+            &:active {
+                background-color: $white;
+                color: $orange;
+                border-color: $orange;
+            }
+        }
+    }
+}

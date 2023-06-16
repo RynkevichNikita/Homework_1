@@ -1,0 +1,31 @@
+.latest {
+    @include pad(40px, 40px);
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/dist/img/latest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .latestTitle {
+        display: inline-block;
+        background-image: url(/dist/img/latest.svg);
+        background-repeat: no-repeat;
+        height: 42px;
+        width: 42px;
+        background-position: center;
+    }
+
+    .latestH {
+        @include fontPrimary(36px, 900, $red);
+        text-transform: uppercase;
+        padding-top: 42px;
+
+        &::after {
+            content: "";
+            width: 170px;
+            height: 4px;
+            background-color: $red;
+            display: block;
+            margin: 40px auto 0;
+        }
+    }
+}

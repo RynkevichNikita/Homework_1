@@ -1,0 +1,337 @@
+@media (max-width: 1200px) {
+
+    .welcome {
+        @include LRpad0;
+
+        .logo {
+            font-size: 18px;
+        }
+
+        .navig {
+
+            .nav-link {
+                font-size: 13px;
+            }
+        }
+
+        .welcomeH {
+
+            h2 {
+                font-size: 48px;
+            }
+
+            h1 {
+                font-size: 96px;
+            }
+
+            button {
+                font-size: 18px;
+                padding: 10px 40px;
+            }
+        }
+    }
+
+    .story {
+        @include LRpad0;
+
+        .what {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        .storyDesc {
+            font-size: 14px;
+        }
+
+        .cardP {
+            width: 320px;
+            height: 260px;
+
+            .cardCol:hover {
+                transform: translate(-10px, -10px);
+            }
+        }
+    }
+
+    .countdown {
+        @include LRpad0;
+    }
+
+    .services {
+        @include LRpad0;
+
+        .servP {
+            font-size: 24px;
+        }
+
+        .servH {
+            font-size: 24px;
+        }
+
+        .servColH {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .servColP {
+            font-size: 14px;
+        }
+
+        .servCont {
+            @include LRmarg0;
+        }
+    }
+
+    .design {
+        @include LRpad0;
+
+        .designP {
+            font-size: 24px;
+        }
+
+        .designH {
+            font-size: 24px;
+        }
+    }
+
+    .wwd {
+        @include LRpad0;
+
+        .wwdTitle {
+            font-size: 24px;
+        }
+
+        .wwdH {
+            font-size: 24px;
+        }
+
+        .wwdP {
+            font-size: 14px;
+        }
+
+        .wwdCont {
+            margin: 0;
+        }
+
+        .wwdAccH {
+            font-size: 18px;
+        }
+
+        .accordion-body {
+            font-size: 14px;
+        }
+    }
+
+    .reviewFirst {
+        @include LRpad0;
+
+        .rfP {
+            font-size: 18px;
+        }
+
+        .rfName {
+            font-size: 24px;
+        }
+    }
+
+    .who {
+        @include LRpad0;
+        max-width: 95%;
+
+        .whoTitle {
+            font-size: 24px;
+        }
+
+        .whoH {
+            font-size: 24px;
+        }
+
+        .whoP {
+            font-size: 14px;
+        }
+
+        .whoKadin,
+        .whoZain,
+        .whoCharlie,
+        .whoBack {
+            height: 400px;
+        }
+    }
+
+    .figures {
+        @include LRpad0;
+    }
+
+    .work {
+        @include LRpad0;
+
+        .workTitle {
+            font-size: 24px;
+        }
+
+        .workH {
+            font-size: 24px;
+        }
+
+        .workP {
+            font-size: 14px;
+        }
+
+        .workGrid {
+            grid-template-rows: repeat(2, 250px);
+
+            .gridIcon {
+                margin-bottom: 40px;
+            }
+
+            .gridH {
+                font-size: 18px;
+            }
+
+            .gridDesc {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    .client {
+        @include LRpad0;
+
+        .clientTitle {
+            font-size: 24px;
+        }
+
+        .clientH {
+            font-size: 24px;
+        }
+
+        .clientContainer {
+
+            .clientName {
+                font-size: 18px;
+            }
+
+            .clientProf {
+                font-size: 14px;
+            }
+
+            .clientDesc {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .blog {
+        @include LRpad0;
+
+        .blogTitle {
+            font-size: 24px;
+        }
+
+        .blogH {
+            font-size: 24px;
+        }
+
+        .blogContainer {
+
+            .blogDate {
+                padding: 5px 24px;
+
+                .blogDateDay {
+                    font-size: 24px;
+                }
+
+                .blogDateMonth {
+                    font-size: 14px;
+                }
+            }
+
+            .blogColH {
+                font-size: 18px;
+            }
+
+            .blogColP {
+                font-size: 14px;
+            }
+
+            .blogInfo {
+
+                .blogNumber1,
+                .blogNumber2 {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .latest {
+        @include LRpad0;
+
+        .latestH {
+            font-size: 24px;
+        }
+    }
+
+    footer {
+        @include LRpad0;
+
+        .fLogo {
+            font-size: 26px;
+        }
+
+        .fDesc {
+            font-size: 14px;
+        }
+
+        .fFol {
+
+            .fFolNum {
+                font-size: 20px;
+            }
+
+            .fFolK,
+            .fFolDesc {
+                font-size: 14px;
+            }
+        }
+
+        .fUs {
+
+            .fUsFollow {
+                font-size: 12px;
+            }
+        }
+
+        .footerIn {
+
+            .footerInput,
+            .footerBut {
+                font-size: 14px;
+            }
+        }
+
+        .fLogo2 {
+            font-size: 18px;
+        }
+
+        .fColHead {
+            font-size: 14px;
+        }
+
+        .fColDate {
+            font-size: 12px;
+        }
+
+        .fAll {
+            font-size: 12px;
+        }
+
+        .fLast {
+            font-size: 13px;
+        }
+    }
+}

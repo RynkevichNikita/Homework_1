@@ -1,0 +1,201 @@
+footer{ 
+    @include pad(100px, 0);
+    background-color: #F8F8F8;
+
+    .fCon {
+        border-bottom: 1px solid $greyest;
+        padding-bottom: 40px;
+    }
+
+    .fLogo {
+        @include fontPrimary(38px, 800, $greyest);
+    }
+
+    .fDesc {
+        @include fontPrimary(18px, 400, $greyest);
+    }
+
+    .fFol {
+        border-bottom: 1px solid $greyest;
+        margin-bottom: 10px;
+
+        .fFolNum {
+            @include fontPrimary(36px, 700);
+        }
+    
+        .fFolK {
+            @include fontPrimary(18px, 700);
+            text-transform: uppercase;
+        }
+    
+        .fFolDesc {
+            @include fontPrimaryIt(18px, 400);
+            text-transform: uppercase;
+        }
+    }
+
+    .fUs {
+        display: flex;
+        justify-content: space-between;
+
+        .fUsFollow {
+            @include fontPrimaryIt(13px, 400, $greyest)
+        }
+
+        .fUsIcons {
+
+            button{
+                border: none;
+                background-color: #F8F8F8;
+            }
+
+            .fUsIconsF1 {
+                display: inline-block;
+                background-image: url(/dist/img/footerIcon.svg);
+                height: 24px;
+                width: 24px;
+                background-position: center;
+            }
+
+            .fUsIconsF2 {
+                display: inline-block;
+                background-image: url(/dist/img/footerIcon2.svg);
+                height: 24px;
+                width: 24px;
+                background-position: center;
+            }
+
+            .fUsIconsF3 {
+                display: inline-block;
+                background-image: url(/dist/img/footerIcon3.svg);
+                height: 24px;
+                width: 24px;
+                background-position: center;
+            }
+
+            .fUsIconsF4 {
+                display: inline-block;
+                background-image: url(/dist/img/footerIcon4.svg);
+                height: 24px;
+                width: 24px;
+                background-position: center;
+            }
+
+            .fUsIconsF5 {
+                display: inline-block;
+                background-image: url(/dist/img/footerIcon5.svg);
+                height: 24px;
+                width: 24px;
+                background-position: center;
+            }
+
+            .fUsIconsF6 {
+                display: inline-block;
+                background-image: url(/dist/img/footerIcon6.svg);
+                height: 24px;
+                width: 24px;
+                background-position: center;
+            }
+
+            .fUsIconsF7 {
+                display: inline-block;
+                background-image: url(/dist/img/footerIcon7.svg);
+                height: 24px;
+                width: 24px;
+                background-position: center;
+            }
+
+            .fUsIconsF8 {
+                display: inline-block;
+                background-image: url(/dist/img/footerIcon8.svg);
+                height: 24px;
+                width: 24px;
+                background-position: center;
+            }
+        }
+    }
+
+    .footerIn{
+        display: flex;
+        padding-top: 40px;
+
+        .footerInput {
+            text-align: center;
+            color: $greyest;
+            @include fontPrimary(18px, 400, $greyest);
+            border: 1px solid $greyest;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    
+        .footerBut {
+            @include fontPrimary(18px, 700, $white);
+            text-transform: uppercase;
+            background-color: $primary;
+            border: none;
+            padding-right: 15px;
+            padding-left: 15px;
+
+            &:hover {
+                background-color: #87D2C4;
+            }
+
+            &:active {
+                background-color: #5C958A;
+            }
+        }
+    }
+
+    .fLogo2 {
+        @include fontPrimary(24px, 700);
+        text-transform: uppercase;
+    }
+
+    .fColBack1 {
+        background-image: url(/dist/img/fCol1.png);
+        background-repeat: no-repeat;
+    }
+
+    .fColBack2 {
+        background-image: url(/dist/img/fCol2.png);
+        background-repeat: no-repeat;
+    }
+
+    .fColBack3 {
+        background-image: url(/dist/img/fCol3.png);
+        background-repeat: no-repeat;
+    }
+
+    .fColHead {
+        @include fontPrimary(18px, 700);
+    }
+
+    .fColDate {
+        @include fontPrimary(13px, 400);
+    }
+
+    .fGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(3, 90px);
+        margin-bottom: 40px;
+    }
+
+    .dGridEl {
+        background-image: url(/dist/img/fGrid.png);
+        // background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .fAll {
+        @include fontPrimary(13px, 400);
+        color: $black;
+        text-transform: uppercase;
+    }
+
+    .fLast {
+        @include fontPrimary(13px, 700);
+        text-align: center;
+        padding-top: 20px;
+    }
+}

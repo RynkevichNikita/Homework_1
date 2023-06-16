@@ -4,7 +4,7 @@
     background-image: linear-gradient(rgba($white, 0.8), rgba($white, 0.8)), url(/dist/img/design.png);
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 870px;
+    max-height: 800px;
 
     .designP {
         @include fontItalic(30px);
@@ -30,6 +30,6 @@
     }
 
     .designPhone {
-        transform: translate(280px, -320px);
+        transform: translate(240px, -240px);
     }
 }
